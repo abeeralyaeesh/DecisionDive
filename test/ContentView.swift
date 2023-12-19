@@ -314,37 +314,6 @@ struct ContentView: View {
 //                        }
 //                        
 //                    }
-//                    
-//                    
-//                    
-//                    
-//                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-//                    
-//                    
-//                    
 //                    else{
                         HStack{
                             
@@ -373,7 +342,7 @@ struct ContentView: View {
                             
                         } //hstack for hello
 //                        .padding(.top,-9)
-                        .padding(.leading,180)
+                        .padding(.trailing,180)
                         .padding(.top,20)
                         //.padding(.bottom,1)
 ////                        .preferredColorScheme(isDarkModeOn ? .dark : .light)
@@ -421,7 +390,7 @@ struct ContentView: View {
                                     Font.custom("SF Pro Rounded", size: 30)
                                         .weight(.bold)
                                 )
-                                .padding(.leading,110)
+                                .padding(.trailing,110)
                                 .padding(.bottom,50)
                                 .padding(.top,15)
 
@@ -456,7 +425,7 @@ struct ContentView: View {
                                 
                                 VStack(spacing:15){
                                     
-                                    NavigationLink( destination: SwiftUIView()){
+                                    NavigationLink( destination: ContentViewDiscoverSelf()){
                                         ZStack{
                                             
                                             Rectangle()
@@ -488,7 +457,7 @@ struct ContentView: View {
                                     
                                     //navigate right box
                                     
-                                    NavigationLink( destination: SwiftUIView()){
+                                    NavigationLink( destination: ContentViewDestination()){
                                         
                                         
                                         ZStack{
@@ -525,7 +494,7 @@ struct ContentView: View {
                                 }.padding(.bottom,100)
                                 
                                 VStack(spacing:15){
-                                    NavigationLink( destination: SwiftUIView()){
+                                    NavigationLink( destination: ContentViewSport()){
                                         
                                         
                                         ZStack{
@@ -560,7 +529,7 @@ struct ContentView: View {
                                         
                                     }//navigate left box
                                     
-                                    NavigationLink( destination: SwiftUIView()){
+                                    NavigationLink( destination: ContentViewYourPath()){
                                         
                                         ZStack{
                                             
@@ -604,15 +573,13 @@ struct ContentView: View {
 //
 //                                        )
 //                                        .padding(.leading,250).padding(.bottom,10)
-                                Text("Note: advices provided are general advices \n for assistance purposes only!")
-                                    .font(
-                                        Font.custom("SF Pro Rounded", size: 14)
-                                        
-                                    )
-                                
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(.gray)
-                                
+                            VStack{
+                                Text("Note: advices provided are general advices")
+                                Text("for assistance purposes only!")
+                            } .multilineTextAlignment(.center)
+                                .foregroundColor(.gray)
+                            .font(
+                                Font.custom("SF Pro Rounded", size: 14))
                                 // .frame(width: 310, height: 60, alignment: .top)
                                 
 //                                    .font(
