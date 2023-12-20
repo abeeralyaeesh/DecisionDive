@@ -75,8 +75,6 @@ struct ContentView: View {
                                     //navigate right box
                                     
                                     NavigationLink( destination: ContentViewDestination()){
-                                        
-                                        
                                         ZStack{
                                             
                                             Rectangle()
@@ -146,7 +144,7 @@ struct ContentView: View {
                                         
                                     }//navigate left box
                                     
-                                    NavigationLink( destination: YourPathView(frontContent: "", backContent: "")){
+                                    NavigationLink( destination: ContentViewYourPath()){
                                         
                                         ZStack{
                                             

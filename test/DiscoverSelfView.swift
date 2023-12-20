@@ -33,8 +33,8 @@ struct DiscoverSelfView: View {
                 .background(
                     LinearGradient(
                         stops: [
-                            Gradient.Stop(color: Color(red: 0.7, green: 0.93, blue: 1), location: 0.00),
-                            Gradient.Stop(color: Color(red: 0.16, green: 0.73, blue: 0.89), location: 1.00),
+                            Gradient.Stop(color: Color(red: 1, green: 0.82, blue: 0.62), location: 0.00),
+                            Gradient.Stop(color: Color(red: 1, green: 0.62, blue: 0.18), location: 1.00),
                         ],
                         startPoint: UnitPoint(x: 0, y: 0),
                         endPoint: UnitPoint(x: 1, y: 1.03)
@@ -58,7 +58,7 @@ struct DiscoverSelfView: View {
                 .overlay(
                     RoundedRectangle(cornerRadius: 40)
                         .inset(by: 2.5)
-                        .stroke(Color(red: 0.69, green: 0.93, blue: 1), lineWidth: 5))
+                        .stroke(Color(red: 1, green: 0.82, blue: 0.62), lineWidth: 5))
             }
         }
         .rotation3DEffect(

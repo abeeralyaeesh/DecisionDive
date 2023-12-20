@@ -33,11 +33,11 @@ struct SportView: View {
                     .background(
                         LinearGradient(
                             stops: [
-                                Gradient.Stop(color: Color(red: 0.76, green: 0.69, blue: 1), location: 0.00),
-                                Gradient.Stop(color: Color(red: 0.56, green: 0.44, blue: 0.96), location: 1.00),
+                                Gradient.Stop(color: Color(red: 0.66, green: 1, blue: 0.92), location: 0.00),
+                                Gradient.Stop(color: Color(red: 0, green: 0.7, blue: 0.53), location: 1.00),
                             ],
-                            startPoint: UnitPoint(x: 0.5, y: 0),
-                            endPoint: UnitPoint(x: 0.5, y: 1)
+                            startPoint: UnitPoint(x: 0, y: 0),
+                            endPoint: UnitPoint(x: 1, y: 1.03)
                         )
                     )
                     .shadow(color: Color(red: 0.55, green: 0.55, blue: 0.55).opacity(0.1), radius: 12.5, x: 0, y: 4)
@@ -57,7 +57,7 @@ struct SportView: View {
                     .overlay(
                         RoundedRectangle(cornerRadius: 40)
                             .inset(by: 2.5)
-                            .stroke(Color(red: 0.69, green: 0.93, blue: 1), lineWidth: 5))
+                            .stroke(Color(red: 0.66, green: 1, blue: 0.92), lineWidth: 5))
                 }
             }
             .rotation3DEffect(
