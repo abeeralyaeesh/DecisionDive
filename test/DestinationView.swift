@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DestinationView: View {
     @State private var isFlipped = false
+
     var frontContent: String
     var backContent: String
     var body: some View {
@@ -50,7 +51,7 @@ struct DestinationView: View {
                         .multilineTextAlignment(.center)
                 }
                 .frame(width: 270, height: 288)
-                .background(Color(red: 1, green: 1, blue: 1))
+                .background(Color("DarkModeColor"))
                 .cornerRadius(40)
                 .shadow(color: Color(red: 0.32, green: 0.34, blue: 0.38).opacity(0.32), radius: 71.99999, x: 0, y: 34)
                 .overlay(
@@ -68,31 +69,27 @@ struct DestinationView: View {
             }
         }
     }
-        
-        
-    }
+}
 struct ContentViewDestination: View {
-    let frontContents = ["do you like the beach \n\nand \n\nmodern buildings?", "Front 2", "Front 3", "Front 4", "Front 5"]
-    let backContents = ["Malaysia", "Back 2", "Back 3", "Back 4", "Back 5"]
+    let frontContents = ["  Warm and tropical, relaxing on \n the beach, low budget: ", "Cold and snowy, engaging in outdoor adventures, high budget", "Extended stay, local food, with family or friends"]
+    let backContents = ["Thailand", "Switzerland", "Bali, Indonesia"]
     let whidth : CGFloat = 0
     let hejght : CGFloat = 0
     @State private var currentIndex: Int = 0
     @GestureState private var dragOffse:CGFloat = 0
     var body: some View {
+        ZStack{
+            Color("DarkModeColor")
+                .ignoresSafeArea()
         VStack{
             Text("About Your Destination ")
                 .padding(.bottom,149)
-            .font(
-            Font.custom("SF Pro Rounded", size: 24)
-            .weight(.bold)
-            )
-            .multilineTextAlignment(.center)
-            .foregroundColor(Color(red: 0.16, green: 0.18, blue: 0.2))
-            .padding()
+                .multilineTextAlignment(.center)
+                .padding()
             ZStack{
                 ForEach(0..<min(frontContents.count, backContents.count)) { index in
                     VStack{
-                        DestinationView(frontContent: frontContents[index], backContent: backContents[index])
+                        YourPathView(frontContent: frontContents[index], backContent: backContents[index])
                             .frame(width: 200, height: 300)
                     }
                     .frame(width: 270, height: 288)
@@ -114,7 +111,11 @@ struct ContentViewDestination: View {
                             }
                         }
                     }))
-        } } }
-#Preview {
-    ContentView()
+        }
+    }
+    }
 }
+#Preview {
+    ContentViewDestination()
+}
+

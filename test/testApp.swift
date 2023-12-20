@@ -12,7 +12,7 @@ struct testApp: App {
 //    @StateObject private var themeSettings = ThemeSettings()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreen()
 //                .environmentObject(themeSettings)
         }
     }
