@@ -33,8 +33,8 @@ struct DestinationView: View {
                 .background(
                     LinearGradient(
                         stops: [
-                            Gradient.Stop(color: Color(red: 0.7, green: 0.93, blue: 1), location: 0.00),
-                            Gradient.Stop(color: Color(red: 0.16, green: 0.73, blue: 0.89), location: 1.00),
+                            Gradient.Stop(color: Color(red: 0.66, green: 1, blue: 0.92), location: 0.00),
+                            Gradient.Stop(color: Color(red: 0, green: 0.7, blue: 0.53), location: 1.00),
                         ],
                         startPoint: UnitPoint(x: 0, y: 0),
                         endPoint: UnitPoint(x: 1, y: 1.03)
@@ -57,7 +57,7 @@ struct DestinationView: View {
                 .overlay(
                     RoundedRectangle(cornerRadius: 40)
                         .inset(by: 2.5)
-                        .stroke(Color(red: 0.69, green: 0.93, blue: 1), lineWidth: 5))
+                        .stroke(Color(red: 0.66, green: 1, blue: 0.92), lineWidth: 5))
             }
         }
         .rotation3DEffect(
@@ -89,7 +89,7 @@ struct ContentViewDestination: View {
             ZStack{
                 ForEach(0..<min(frontContents.count, backContents.count)) { index in
                     VStack{
-                        YourPathView(frontContent: frontContents[index], backContent: backContents[index])
+                        DestinationView(frontContent: frontContents[index], backContent: backContents[index])
                             .frame(width: 200, height: 300)
                     }
                     .frame(width: 270, height: 288)

@@ -30,7 +30,7 @@ struct YourPathView: View {
                 }
                 .frame(width: 270, height: 288)
                 .background(
-                    LinearGradient(
+                        LinearGradient(
                         stops: [
                             Gradient.Stop(color: Color(red: 0.76, green: 0.69, blue: 1), location: 0.00),
                             Gradient.Stop(color: Color(red: 0.56, green: 0.44, blue: 0.96), location: 1.00),

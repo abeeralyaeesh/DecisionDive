@@ -146,7 +146,7 @@ struct ContentView: View {
                                         
                                     }//navigate left box
                                     
-                                    NavigationLink( destination: ContentViewYourPath()){
+                                    NavigationLink( destination: YourPathView(frontContent: "", backContent: "")){
                                         
                                         ZStack{
                                             

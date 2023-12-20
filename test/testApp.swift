@@ -12,7 +12,10 @@ struct testApp: App {
 //    @StateObject private var themeSettings = ThemeSettings()
     var body: some Scene {
         WindowGroup {
-            SplashScreen()
+//            SplashScreen()
+           // YourPathView(frontContent: "", backContent: "")
+            ContentViewDestination()
+            
 //                .environmentObject(themeSettings)
         }
     }
