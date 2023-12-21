@@ -33,11 +33,11 @@ struct ContentView: View {
 
                            Spacer()
                             
-                            Text("Start Your Journey ")
-                                .dynamicTypeSize(.xxxLarge)
-                                .fontWeight(.bold)
+                            Text("StartYourJourney1")
+                                .font(.system(size: 25, weight: .bold))
                                 .padding(.trailing,150)
                                 .padding(.bottom,30)
+                                
 //                                .padding(.top,15)   
                             HStack(spacing:10){
                                 VStack(spacing:15){
@@ -61,9 +61,9 @@ struct ContentView: View {
                                                 .cornerRadius(15)
                                                 .shadow(color: Color(red: 0.55, green: 0.55, blue: 0.55).opacity(0.1), radius: 12.5, x: 0, y: 4)
                                             
-                                            Text("Discover Your Self")
+                                            Text("DiscoverYourSelf1")
                                                 .font(
-                                                    Font.custom("SF Pro Rounded", size: 20)
+                                                    Font.custom("SF Pro Rounded", size: 25)
                                                         .weight(.bold)
                                                 )
                                             // .multilineTextAlignment(.center)
@@ -93,9 +93,9 @@ struct ContentView: View {
                                                 .cornerRadius(15)
                                                 .shadow(color: Color(red: 0.55, green: 0.55, blue: 0.55).opacity(0.1), radius: 12.5, x: 0, y: 4)
                                             
-                                            Text("Find Your Destination")
+                                            Text("FindYourDestination1")
                                                 .font(
-                                                    Font.custom("SF Pro Rounded", size: 20)
+                                                    Font.custom("SF Pro Rounded", size: 25)
                                                     //.weight(.bold)
                                                 )
                                             //.multilineTextAlignment(.center)
@@ -130,9 +130,9 @@ struct ContentView: View {
                                                 .cornerRadius(15)
                                                 .shadow(color: Color(red: 0.55, green: 0.55, blue: 0.55).opacity(0.1), radius: 12.5, x: 0, y: 4)
                                             
-                                            Text("Find Your Sport")
+                                            Text("FindYourSport1")
                                                 .font(
-                                                    Font.custom("SF Pro Rounded", size: 20)
+                                                    Font.custom("SF Pro Rounded", size: 25)
                                                     //.weight(.bold)
                                                 )
                                             //.multilineTextAlignment(.center)
@@ -166,9 +166,9 @@ struct ContentView: View {
                                             
                                             
                                             
-                                            Text("Find Your Path")
+                                            Text("FindYourPath1")
                                                 .font(
-                                                    Font.custom("SF Pro Rounded", size: 20)
+                                                    Font.custom("SF Pro Rounded", size: 25)
                                                         .weight(.bold)
                                                 )
                                             // .multilineTextAlignment(.center)
@@ -182,13 +182,13 @@ struct ContentView: View {
                                 
                             }//first row of boxes
                             VStack{
-                                Text("Note: advices provided are general advices")
-                                Text("for assistance purposes only!")
+                                Text("Note:advicesprovidedaregeneraladvices1")
+                                Text("forassistancepurposesonly!1")
                             } .multilineTextAlignment(.center)
                                 .foregroundColor(.gray)
                                 .padding(.bottom,40)
                             .font(
-                                Font.custom("SF Pro Rounded", size: 14))
+                                Font.custom("SF Pro Rounded", size: 15))
                         }//vstack for the boxes
 
                 }

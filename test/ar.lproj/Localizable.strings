@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  test
+
+  Created by Noura Alqahtani on 20/12/2023.
+  
+*/
+
+//content view
+
+/////////////////////////////////////////////////////////////////////
+
+"StartYourJourney1" = "ابدا رحلتك";
+"DiscoverYourSelf1" = "اكتشف نفسك";
+"FindYourDestination1" = "اكتشف وجهتك";
+"FindYourSport1" = "اختر رياضتك ";
+"FindYourPath1" ="اكتشف مهنتك";
+"Note:advicesprovidedaregeneraladvices1" = "،ملاحظة: هذه النصائح هي نصائح عامة";
+"forassistancepurposesonly!1" = "لغرض الإرشاد و المساعدة فقط ";
+
+//////////////////////////////////////////////////////////////////////
+
+//your path
+
+/////////////////////////////////////////////////////////////////////
+
+"Do you like deal with numbers1" = "هل تفضل التعامل مع الارقام؟";
+"Do you have a creative mindset1" = "هل لديك تفكير ابداعي؟";
+"Are you a logical thinker 1" = "هل تفضل التفكيرالمنطقي؟ ";
+"do you like being physically active 1" = "هل تفضل النشاط البدني؟";
+
+"Economist Accountant1" = "اقتصاد، محاسبة";
+"marketing graphic designer1" = "تسويق، مصمم جرافك";
+"Engineering Sciences 1" = "هندسة، علوم";
+"personal athletictrainer physicaltherapist chiropractor 1" = "مدرب شخصي / رياضي، معالج فيزيائي";

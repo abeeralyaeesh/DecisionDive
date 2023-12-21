@@ -12,6 +12,7 @@
 		14183D722B2EE83C003AE2DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14183D712B2EE83C003AE2DE /* Assets.xcassets */; };
 		14183D752B2EE83C003AE2DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14183D742B2EE83C003AE2DE /* Preview Assets.xcassets */; };
 		14183D7C2B2F337A003AE2DE /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14183D7B2B2F337A003AE2DE /* DestinationView.swift */; };
+		143038C82B32CC8E008DF17D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 143038CA2B32CC8E008DF17D /* Localizable.strings */; };
 		A2F04FFB2B317A15002F29FF /* SportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F04FFA2B317A15002F29FF /* SportView.swift */; };
 		A2F04FFD2B317AA4002F29FF /* DiscoverSelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F04FFC2B317AA4002F29FF /* DiscoverSelfView.swift */; };
 		A2F04FFF2B317B13002F29FF /* YourPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F04FFE2B317B13002F29FF /* YourPathView.swift */; };
@@ -25,6 +26,8 @@
 		14183D712B2EE83C003AE2DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14183D742B2EE83C003AE2DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		14183D7B2B2F337A003AE2DE /* DestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
+		143038C92B32CC8E008DF17D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		143038CB2B32CC96008DF17D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A2F04FFA2B317A15002F29FF /* SportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportView.swift; sourceTree = "<group>"; };
 		A2F04FFC2B317AA4002F29FF /* DiscoverSelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverSelfView.swift; sourceTree = "<group>"; };
 		A2F04FFE2B317B13002F29FF /* YourPathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourPathView.swift; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 				14183D6D2B2EE83B003AE2DE /* testApp.swift */,
 				A2F050002B3185C4002F29FF /* SplashScreen.swift */,
 				14183D6F2B2EE83B003AE2DE /* ContentView.swift */,
+				143038CA2B32CC8E008DF17D /* Localizable.strings */,
 				A2F04FFE2B317B13002F29FF /* YourPathView.swift */,
 				14183D7B2B2F337A003AE2DE /* DestinationView.swift */,
 				A2F04FFA2B317A15002F29FF /* SportView.swift */,
@@ -124,6 +128,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 14183D612B2EE83B003AE2DE;
 			productRefGroup = 14183D6B2B2EE83B003AE2DE /* Products */;
@@ -141,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14183D752B2EE83C003AE2DE /* Preview Assets.xcassets in Resources */,
+				143038C82B32CC8E008DF17D /* Localizable.strings in Resources */,
 				14183D722B2EE83C003AE2DE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +169,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		143038CA2B32CC8E008DF17D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				143038C92B32CC8E008DF17D /* en */,
+				143038CB2B32CC96008DF17D /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		14183D762B2EE83C003AE2DE /* Debug */ = {
@@ -292,7 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"test/Preview Content\"";
-				DEVELOPMENT_TEAM = 49DTH222AM;
+				DEVELOPMENT_TEAM = W6CBPL5U8L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -322,7 +340,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"test/Preview Content\"";
-				DEVELOPMENT_TEAM = 49DTH222AM;
+				DEVELOPMENT_TEAM = W6CBPL5U8L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

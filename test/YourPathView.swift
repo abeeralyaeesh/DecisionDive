@@ -83,7 +83,7 @@ struct ContentViewYourPath: View {
                 .ignoresSafeArea()
         VStack{
 
-            Text("Find your path ")
+            Text("FindYourPath1")
             .dynamicTypeSize(.xxxLarge)
             .fontWeight(.bold)
             .padding(.bottom,30)
