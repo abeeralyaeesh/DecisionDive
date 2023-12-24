@@ -71,8 +71,14 @@ struct YourPathView: View {
     }
 }
 struct ContentViewYourPath: View {
-    let frontContents = ["Do you like deal with numbers?", "Do you have a creative mindset?", "Are you a logical thinker? ", "do you like being physically active?"]
-    let backContents = ["Economist , Accountant", "copy writer , marketing , graphic designer", "Engineering , Sciences", "personal / athletic trainer, physical therapist, chiropractor"]
+    
+//    let frontContents = [NSLocalizedString("Do you like deal with numbers1", comment: "")]
+
+    
+    
+    
+    let frontContents = [NSLocalizedString("Do you like deal with numbers1", comment: ""), NSLocalizedString("Do you have a creative mindset1",comment:""), NSLocalizedString("Are you a logical thinker 1",comment:""), NSLocalizedString("do you like being physically active 1",comment:"")]
+    let backContents = [NSLocalizedString("Economist Accountant1", comment: ""), NSLocalizedString("marketing graphic designer1",comment:""), NSLocalizedString("Engineering Sciences 1",comment:""), NSLocalizedString("personal athletictrainer physicaltherapist chiropractor 1",comment:"")]
     let whidth : CGFloat = 0
     let hejght : CGFloat = 0
     @State private var currentIndex: Int = 0
@@ -82,7 +88,6 @@ struct ContentViewYourPath: View {
             Color("DarkModeColor")
                 .ignoresSafeArea()
         VStack{
-
             Text("FindYourPath1")
             .dynamicTypeSize(.xxxLarge)
             .fontWeight(.bold)
